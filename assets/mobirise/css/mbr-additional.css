@@ -1410,7 +1410,16 @@ body {
 }
 .cid-qYgLlEpmYH .mbr-text,
 .cid-qYgLlEpmYH .mbr-section-btn {
-  color: #232323;
+  color: #c4965d;
+}
+.cid-qYgLlEpmYH H3 {
+  color: #c4965d;
+}
+.cid-qYgLlEpmYH p {
+  display: inline-flex;
+  border-radius: 25px;
+  padding: 0 .8em;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .cid-qYgSQNCoZO {
   padding-top: 90px;
