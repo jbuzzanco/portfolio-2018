@@ -1421,23 +1421,15 @@ body {
   padding: 0 .8em;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.cid-qYgSQNCoZO {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #f9f9f9;
+.cid-ribAXjv1Ey {
+  background: linear-gradient(45deg, #e4d295, #f94877);
 }
-.cid-qYgSQNCoZO .mbr-text {
-  color: #767676;
+.cid-ribAXjv1Ey .mbr-section-subtitle {
+  font-style: italic;
+  letter-spacing: 1rem;
 }
-.cid-qYgSQNCoZO h4 {
+.cid-ribAXjv1Ey H3 {
   text-align: center;
-}
-.cid-qYgSQNCoZO p {
-  text-align: center;
-}
-.cid-qYgSQNCoZO .card-img span {
-  font-size: 96px;
-  color: #149dcc;
 }
 .cid-qYhtBgkiGb {
   padding-top: 90px;
