@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Joel's Portfolio",
-    "currentPage": "index.html",
+    "currentPage": "about.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -28,13 +28,13 @@
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
+        "#2e2e2e",
         "#c4965d",
         "#000000",
         "#6a6a6a",
         "#007bb5",
         "#f94877",
-        "#4af7db",
-        "#ae4af7"
+        "#4af7db"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -51,7 +51,7 @@
       }
     ],
     "versionFirst": "4.7.6",
-    "uniqCompNum": 40,
+    "uniqCompNum": 44,
     "versionPublish": "4.9.1",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/j-white-favicon-1.png",
@@ -76,65 +76,6 @@
               "padding-bottom": "(@paddingBottom * 15px)"
             },
             "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-figure": {
-              "margin": "0 auto",
-              "width": "100%",
-              "display": "flex",
-              "justify-content": "center",
-              "img": {
-                "height": "100%",
-                "margin": "0 auto"
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".mbr-figure": {
-                "img": {
-                  "width": "100% !important"
-                }
-              }
-            },
-            "B": {
-              "color": "#c4965d"
-            },
-            "H1": {
-              "color": "#c4965d"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#c4965d"
-            },
-            "H3": {
-              "color": "#c4965d"
-            },
-            "p": {
-              "display": "inline-flex",
-              "border-radius": "25px",
-              "padding": "0 .8em",
-              "background-color": "rgba(0, 0, 0, 0.8)"
-            }
-          },
-          "_name": "header4",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"30\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#5c698e\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#d3c7dc\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n                <img src=\"@PROJECT_PATH@/assets/images/logo-1549481596118.png\" alt=\"JB\" mbr-style=\"{'width': mediaSize + '%'}\" title=\"JOEL BUZZANCO\">\n        </div>\n    </div>\n</section>",
-          "_cid": "qYgLlEpmYH",
-          "_anchor": "header4-3",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
               "background": "linear-gradient(45deg, @bg-value, @color2)"
             },
             "& when (@bg-type = 'image')": {
@@ -145,17 +86,136 @@
               "letter-spacing": "1rem"
             },
             "H3": {
+              "text-align": "center",
+              "margin-top": "6em"
+            },
+            "H1": {
+              "margin-top": ".3em"
+            },
+            "@media screen and (min-width: 600px)": {
+              "img": {
+                "width": "40%"
+              }
+            },
+            ".mbr-section-title, .mbr-section-btn": {
               "text-align": "center"
             }
           },
           "_name": "header11",
-          "_customHTML": "<section class=\"header11\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#e4d295\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#f94877\" condition=\"bg.type == 'color'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container align-left\">\n        <div class=\"media-container-column mbr-white col-md-12\">\n            <h3 class=\"mbr-section-subtitle py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><span style=\"font-style: normal;\"><b>\n                Hello, I'm Joel&nbsp;</b></span></h3>\n            <h1 class=\"mbr-section-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">I am a designer &amp; web developer.</h1>\n            <p class=\"mbr-text py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><br>I am able to quickly find what works and what doesn't work in functional web apps and landing pages for business and marketing purposes. I am fascinated by design that delights and drives action.<br><br>I have an instinct in understanding data for good UX, to wireframes, to production, to empathy back with the user. I have a background in contract design &amp; web development, anywhere from non-profits, to innovative startups needing work on their digital products and landing pages. However, as I grow, I am interested in a position where I can continually contribute to being a valuable part of driving innovation with thoughtful design &amp; development.</p>\n            <div class=\"mbr-section-btn py-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header11\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#e4d295\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#f94877\" condition=\"bg.type == 'color'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container align-left\">\n        <div class=\"media-container-column mbr-white col-md-12\">\n            <h3 class=\"mbr-section-subtitle py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><span style=\"font-style: normal;\"><b>\n                Hello, I'm Joel&nbsp;</b></span></h3>\n            <div class=\"image-block align-center\">\n                <img src=\"@PROJECT_PATH@/assets/images/logo-1549481596118.png\" width=\"60%\" alt=\"Joel Buzzanco icon\" title>\n             \n            </div>\n            <h1 class=\"mbr-section-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">I am a designer &amp; web developer.</h1>\n            <p class=\"mbr-text py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><br>I am able to quickly find what works and what doesn't work in functional web apps and landing pages for business and marketing purposes. I am fascinated by design that delights and drives action.<br><br>I have an instinct in understanding data for good UX, to wireframes, to production, to empathy back with the user. I have a background in contract design &amp; web development, anywhere from non-profits, to innovative startups needing work on their digital products and landing pages. However, as I grow, I am interested in a position where I can continually contribute to being a valuable part of driving innovation with thoughtful design &amp; development.</p>\n            <div class=\"mbr-section-btn py-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_cid": "ribAXjv1Ey",
           "_anchor": "header11-13",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h2": {
+              "text-align": "left"
+            },
+            "h4": {
+              "text-align": "left",
+              "font-weight": "500"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".aside-content": {
+              "flex-basis": "100%",
+              "-webkit-flex-basis": "100%"
+            },
+            ".block-content": {
+              "display": "-webkit-flex",
+              "flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "word-break": "break-word"
+            },
+            ".media": {
+              "margin": "initial",
+              "align-items": "center",
+              "-webkit-align-items": "center"
+            },
+            ".mbr-figure": {
+              "align-self": "flex-start",
+              "-webkit-align-self": "flex-start",
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0"
+            },
+            "img": {
+              "padding": "0.2em",
+              "border-radius": "50%",
+              "border": "1em solid black",
+              "background-color": "#c4965d"
+            },
+            ".card-img": {
+              "padding-right": "2rem",
+              "width": "auto"
+            },
+            ".card-img span": {
+              "font-size": "72px",
+              "color": "#707070"
+            },
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "4rem"
+                }
+              },
+              ".media-container-row": {
+                "& when (@reverseContent)": {
+                  "-webkit-flex-direction": "row-reverse"
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "padding-right": "0",
+                "padding-bottom": "1rem",
+                "margin-bottom": "2rem",
+                "& when (@reverseContent)": {
+                  "padding-bottom": "0",
+                  "margin-bottom": "0",
+                  "padding-top": "1rem",
+                  "margin-top": "2rem"
+                }
+              },
+              ".media-container-row": {
+                "& when (@reverseContent)": {
+                  "-webkit-flex-direction": "column-reverse"
+                }
+              }
+            },
+            "@media (max-width: 300px)": {
+              ".card-img span": {
+                "font-size": "40px !important"
+              }
+            }
+          },
+          "_name": "features11",
+          "_customHTML": "<section class=\"features11\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text Header\" name=\"showTextHead\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"reverseContent\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"20\" max=\"80\" step=\"5\" value=\"40\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">   \n        <div class=\"col-md-12\">\n            <div class=\"media-container-row\">\n                <div class=\"mbr-figure m-auto\" mbr-style=\"{'width': mediaSize + '%'}\">\n                    <img src=\"@PROJECT_PATH@/assets/images/headshot.png\" alt=\"headshot of Joel\" title=\"Joel - Designer - Developer\">\n                </div>\n                <div class=\" align-left aside-content\">\n                    <h2 class=\"mbr-title pt-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                        Image with content\n                    </h2>\n                    <div class=\"mbr-section-text\">\n                        <p class=\"mbr-text mb-5 pt-3 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">\n                        I have an instinct in understanding data for good UX, to drawing wireframes, to production, to empathy back with the user. I have a background in contract design &amp; web development, anywhere from non-profits, to innovative startups needing work on their digital products and landing pages. However, as I grow, I am interested in a position where I can continually contribute to being a valuable part of driving innovation with thoughtful development, &amp; design that delights the user.\n                        </p>\n                    </div>\n\n                    <div class=\"block-content\" mbr-if=\"showTextHead||showText||showIcons\">\n                        <div class=\"card p-3 pr-3\">\n                            <div class=\"media\">\n                                <div class=\" align-self-center card-img pb-3\" mbr-if=\"showIcons\">\n                                    <span mbr-icon class=\"mbri-extension mbr-iconfont\"></span>\n                                </div>     \n                                <div class=\"media-body\">\n                                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextHead\">\n                                        Over 400 Amazing Blocks\n                                    </h4>\n                                </div>\n                            </div>                \n\n                            <div class=\"card-box\">\n                                <p class=\"block-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                                   Mobirise offers several themes that include sliders, galleries, article blocks, counters, accordions, video, animated text, live filtered tables, shop, contact forms, lightbox, testimonials, timelines, google map, progress bars and more. \n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"card p-3 pr-3\" mbr-if=\"cardsAmount > 1\">\n                            <div class=\"media\">\n                                <div class=\"align-self-center card-img pb-3\" mbr-if=\"showIcons\">\n                                    <span mbr-icon class=\"mbri-drag-n-drop2 mbr-iconfont\"></span>\n                                </div>     \n                                <div class=\"media-body\">\n                                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTextHead\">\n                                        Easy and Simple to Use\n                                    </h4>\n                                </div>\n                            </div>                \n\n                            <div class=\"card-box\">\n                                <p class=\"block-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                                    Cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div> \n    </div>          \n</section>",
+          "_cid": "risdmsfFGA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features11-16",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_styles": {
@@ -1290,46 +1350,40 @@
         },
         {
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+            ".section-text": {
+              "padding": "2rem 0",
+              "color": "#c4965d"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
+            ".inner-container": {
+              "margin": "0 auto"
             },
-            ".mbr-figure": {
-              "margin": "0 auto",
-              "width": "100%",
-              "display": "flex",
-              "justify-content": "center",
-              "img": {
-                "height": "100%",
-                "margin": "0 auto",
-                "border-radius": "20%"
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
               }
             },
-            "@media (max-width: 991px)": {
-              ".mbr-figure": {
-                "img": {
-                  "width": "60% !important",
-                  "border-radius": "20%"
-                }
-              }
+            ".section-text B": {
+              "color": "#c4965d"
             }
           },
-          "_name": "header4",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"15\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/profilepicture.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#c4965d\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">About Me</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">\n                    Joel Buzzanco<br></h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Developer - Designer</p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n            <div class=\"mbr-figure pt-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/profilepicture.jpg\" alt=\"picture of Joel\" mbr-style=\"{'width': mediaSize + '%'}\" title=\"joel-face-shot\">\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qZXUH9VBJt",
-          "_anchor": "header4-l",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_name": "content10",
+          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"66\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#c4965d\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#2e2e2e\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-white mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".section-text\" mbr-text>about me</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n    </div>\n</section>",
+          "_cid": "risiCx6Ovz",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "content10-17"
         },
         {
           "_styles": {
@@ -1350,7 +1404,7 @@
             }
           },
           "_name": "content2",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><span style=\"font-weight: bold; font-style: normal;\">I am a Developer. A lot of companies having jobs, titles with that name but different responsibilities has somewhat distorted the meaning of what a developer is. From FrontEnd Developer, BackEnd Developer, Full Stack Developer, Software Developer, Software Engineer, FrontEnd Engineer... and once your in these roles a lot of the responsibilities coincide. I could go on and on, and if you've ever hired for or worked in the tech space, you probably can relate to what I'm talking about. &nbsp;</span><br><span style=\"font-weight: bold; font-style: normal;\">By </span>I am a Developer<span style=\"font-weight: bold; font-style: normal;\">, what I mean is: yes I can write code, yes I can write programs – and whether it be FrontEnd, BackEnd, Software, I am not afraid to dive into and learn new technologies.&nbsp;</span></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><span style=\"font-weight: bold; font-style: normal;\">I am a Developer. A lot of companies having the title \"Developer\" for a position, &nbsp;but all with different responsibilities has somewhat distorted the meaning of what a developer is. From FrontEnd Developer, BackEnd Developer, Full Stack Developer, Software Developer, Software Engineer, FrontEnd Engineer... and once your in these roles a lot of the responsibilities coincide. I could go on and on, and if you've ever hired for or worked in the tech space, you probably can relate to what I'm talking about. &nbsp;</span><br><span style=\"font-weight: bold; font-style: normal;\">By </span>I am a Developer<span style=\"font-weight: bold; font-style: normal;\">, what I mean is: yes I can write code, yes I can write programs – and whether it be FrontEnd, BackEnd, Software, I am not afraid to dive into and learn new technologies.&nbsp;</span></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "qZY6lZ0OgL",
           "_anchor": "content2-m",
           "_protectedParams": [],
