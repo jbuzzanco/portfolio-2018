@@ -684,6 +684,7 @@ a:hover {
   right: 0;
   top: 0;
   z-index: 0;
+  pointer-events: none;
 }
 blockquote {
   font-style: italic;
@@ -1396,9 +1397,16 @@ body {
 .cid-ribAXjv1Ey H1 {
   margin-top: .3em;
 }
+.cid-ribAXjv1Ey img {
+  padding: 0.2em;
+  border-radius: 50%;
+  border: 1em solid black;
+  background-color: #c4965d;
+  width: 45%;
+}
 @media screen and (min-width: 600px) {
   .cid-ribAXjv1Ey img {
-    width: 40%;
+    width: 45%;
   }
 }
 .cid-ribAXjv1Ey .mbr-section-title,
@@ -1441,12 +1449,6 @@ body {
   -webkit-align-self: flex-start;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
-}
-.cid-risdmsfFGA img {
-  padding: 0.2em;
-  border-radius: 50%;
-  border: 1em solid black;
-  background-color: #c4965d;
 }
 .cid-risdmsfFGA .card-img {
   padding-right: 2rem;
