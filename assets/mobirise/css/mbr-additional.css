@@ -1397,6 +1397,13 @@ body {
 .cid-ribAXjv1Ey H1 {
   margin-top: .3em;
 }
+.cid-ribAXjv1Ey p a {
+  color: white;
+  transition: 0.3s;
+}
+.cid-ribAXjv1Ey p a:hover {
+  color: #c4965d;
+}
 .cid-ribAXjv1Ey img {
   padding: 0.2em;
   border-radius: 50%;
