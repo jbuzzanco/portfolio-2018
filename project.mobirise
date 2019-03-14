@@ -52,12 +52,17 @@
     ],
     "versionFirst": "4.7.6",
     "uniqCompNum": 44,
-    "versionPublish": "4.9.3",
+    "versionPublish": "4.9.5",
     "screenshot": "screenshot.png",
     "favicon": "",
     "noImageResize": "true",
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-100448134-5\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'UA-100448134-5');\r\n</script>\r\n",
-    "сanonical-url": ""
+    "сanonical-url": "",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
+    "robotsSwitcher": "on",
+    "siteUrl": "https://joelondesign.com",
+    "sitemapSwitcherAuto": "on",
+    "sitemapSwitcher": "on"
   },
   "pages": {
     "index.html": {
