@@ -1521,8 +1521,8 @@ body {
   color: #767676;
 }
 .cid-qYhtBgkiGb {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-image: url("../../../assets/images/user-experience-notes-2.png");
 }
 .cid-qYhtBgkiGb H2 {
@@ -1534,7 +1534,7 @@ body {
 }
 .cid-s1rRXLlXqR {
   padding-top: 45px;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
   background-color: #efefef;
 }
 .cid-s1rRXLlXqR .card-box {
@@ -1697,6 +1697,49 @@ body {
 .cid-qYh2jnJIkc .card-wrapper:hover {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s;
+}
+.cid-sby8wHKSB3 {
+  padding-top: 45px;
+  padding-bottom: 90px;
+  background-color: #efefef;
+}
+.cid-sby8wHKSB3 .card-box {
+  padding: 0 2rem;
+}
+.cid-sby8wHKSB3 .mbr-section-btn {
+  padding-top: 1rem;
+}
+.cid-sby8wHKSB3 .mbr-section-btn a {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.cid-sby8wHKSB3 h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 2rem;
+}
+.cid-sby8wHKSB3 p {
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+.cid-sby8wHKSB3 .mbr-text {
+  color: #232323;
+}
+.cid-sby8wHKSB3 .card-wrapper {
+  height: 100%;
+  padding-bottom: 2rem;
+  background: #c4965d;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s;
+}
+.cid-sby8wHKSB3 .card-wrapper:hover {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+.cid-sby8wHKSB3 .card-title {
+  color: #232323;
 }
 .cid-rQjuGHp0cu {
   padding-top: 90px;
@@ -1978,7 +2021,7 @@ body {
 }
 .cid-risdmsfFGA {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 75px;
   background-color: #ffffff;
 }
 .cid-risdmsfFGA h2 {
@@ -2049,6 +2092,21 @@ body {
   .cid-risdmsfFGA .card-img span {
     font-size: 40px !important;
   }
+}
+.cid-sbycxiZq8i {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: linear-gradient(45deg, #425af2, #425af2);
+}
+.cid-sbycxiZq8i .main {
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+}
+.cid-sbycxiZq8i .main .mbr-section-btn {
+  text-align: right;
+}
+.cid-sbycxiZq8i .btn {
+  margin: 0 0 .5rem 0;
 }
 .cid-qTkzRZLJNu .navbar {
   padding: .5rem 0;
